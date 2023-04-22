@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'polls/css/index.css'%}">
+    <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon.ico'%}">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+    <header class="heade">
+        <div class="logo">
+            <a href="/">
+                <img src="{% static 'polls/img/logo.svg'%}" width="50px" height="50px">
+            </a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="/run">Для бега</a> </li>
+                <li><a href="/basket">Для баскетбола</a> </li>
+                <li><a href="/volley">Для волейбола</a> </li>
+                <li><a href="/foot">Для футбола</a> </li>
+                <li><a href="/delivery">Доставка</a> </li>
+            </ul>
+        </div>
+        <div class="tel">
+            <a href="tel: +79031155674">+7 (903) 115-56-74</a>
+        </div>
+
+
+    </header>
+    <body class="content">
+        <a href="/about">Нажми на меня</a>
+
+    </body>
+</html>

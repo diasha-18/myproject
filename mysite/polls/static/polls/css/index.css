@@ -1,0 +1,51 @@
+.header.heade{
+    background-color: lightblue;
+    height: 50px;
+    width: 100%;
+}
+.body.content{
+    background-color: lightcyan;
+    height: 100%;
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu{
+    flex-grow: 1;
+}
+.menu li{
+    margin-right: 20px;
+}
+.menu ul{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 18px;
+}
+.menu .active{
+    display: block;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    letter-spacing: .27em;
+}
+.menu a{
+    padding: 8px 10px;
+    color: black;
+    text-decoration: none;
+}
+.logo{
+    margin-right: 30px;
+}
+.tel{
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+}
