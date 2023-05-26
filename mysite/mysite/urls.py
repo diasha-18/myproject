@@ -21,7 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index.index),
     path('about/', index.about),
-    path('run/', index.aboutRun),
     path('basket/', index.aboutBasket),
     path('volley/', index.aboutVolley),
     path('foot/', index.aboutFoot),

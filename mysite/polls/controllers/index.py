@@ -1,17 +1,26 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 
+
 def index(request):
     return render(request, 'index.html', {})
+
+
 def about(request):
     return render(request, 'about.html')
-def aboutRun(request):
-    return HttpResponse("RUN")
+
+
 def aboutVolley(request):
-    return HttpResponse("Volleyball")
+    return render(request, 'volleyball.html')
+
+
 def aboutBasket(request):
-    return HttpResponse("Basketball")
+    return render(request, 'basketball.html')
+
+
 def aboutFoot(request):
-    return HttpResponse("Football")
+    return render(request, 'football.html')
+
+
 def aboutDelivery(request):
-    return HttpResponse("Delivery")
+    return render(request, 'delivery.html')

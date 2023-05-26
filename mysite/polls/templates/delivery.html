@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'polls/css/index.css'%}">
+    <link rel="stylesheet" href="{% static 'polls/css/delivery.css'%}">
+    <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon.ico'%}">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+    <header class="heade">
+        <div class="logo">
+            <a href="/">
+                <img src="{% static 'polls/img/logo.svg'%}" width="50px" height="50px">
+            </a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="/basket">Для баскетбола</a> </li>
+                <li><a href="/volley">Для волейбола</a> </li>
+                <li><a href="/foot">Для футбола</a> </li>
+                <li><a href="/delivery">Доставка</a> </li>
+            </ul>
+        </div>
+        <div class="tel">
+            <a href="tel: +79031155674">+7 (903) 115-56-74</a>
+        </div>
+
+
+    </header>
+    <body class="content">
+        <div class="textcols">
+            <div class="textcols-row">
+                <div class="textcols-item" >
+                    <b><center>Стандартная доставка</center></b>
+                    <p class="aligncenter"><img src="{% static 'polls/img/dostavka.jpg'%}" width="280px" height="120px"></p>
+                    <p>Доставим заказ завтра при подтверждении заказа до <span class="time">18<sup>00</sup></span>, если такая опция доступна при оформлении</p>
+                    <p>Возможные интервалы доставки:</p>
+                    <ul class="ul--checked ul--no-margin-bottom"><span class="time-wrapper"><li><span class="time">10<sup>00</sup></span> — <span class="time">18<sup>00</sup></span></li><li><span class="time">10<sup>00</sup></span> — <span class="time">13<sup>00</sup></span></li><li><span class="time">10<sup>00</sup></span> — <span class="time">22<sup>00</sup></span></li><li><span class="time">13<sup>00</sup></span> — <span class="time">16<sup>00</sup></span></li><li><span class="time">16<sup>00</sup></span> — <span class="time">19<sup>00</sup></span></li><li><span class="time">19<sup>00</sup></span> — <span class="time">22<sup>00</sup></span></li></ul>
+                    <p>Стоимость доставки — 400 руб.</p>
+                </div>
+                <div class="textcols-item">
+                    <b><center>Доставка в день заказа (только в пределах МКАД)</center></b>
+                    <p class="aligncenter"><img src="{% static 'polls/img/fast.jpg'%}" width="280px" height="120px"></p>
+                    <p>Доставка сегодня возможна при оформлении заказа до <span class="time">20<sup>00</sup></span>, только при предоплате на сайте.</p>
+                    <p>После того, как курьер получит заказ на доставку, можно будет отследить заказ в приложении YandexGo. Если приложение не установлено, придет смс сообщение с информацией о курьере.</p>
+                    <p>Стоимость доставки — 600 руб.</p>
+                </div>
+                <div class="textcols-item">
+                    <b><center>Забрать в магазине</center></b>
+                    <p class="aligncenter"><img src="{% static 'polls/img/samovyvoz.jpg'%}" width="380px" height="120px"></p>
+                    <p>Заберите свой заказ в одном из магазинов в г. Москва.</p>
+                    <p>Если товар есть в наличии в выбранном магазине, то уже через 30 минут после оформления.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

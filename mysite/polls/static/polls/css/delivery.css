@@ -1,0 +1,27 @@
+.textcols {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 40px;
+}
+.textcols-row {
+	 display: table-row;
+}
+.textcols-item {
+	display: table-cell;
+	width: 33%;
+	vertical-align: top;
+	padding: 0;
+	background: #efeeee;
+	border-right: 30px solid #efeeee;
+	border-left: 30px solid #efeeee;
+}
+.textcols-row .textcols-item:first-child {
+	border-left: none;
+}
+.textcols-row .textcols-item:last-child {
+	border-right: none;
+}
+.aligncenter {
+    text-align: center;
+}
