@@ -27,6 +27,7 @@ urlpatterns = [
     path('volley/', index.aboutVolley),
     path('delivery/', index.aboutDelivery),
     path('feedback/', feedback.create),
+    path('index.html/',  index.index),
     path('feedback/index', feedback.index),
 
 ]

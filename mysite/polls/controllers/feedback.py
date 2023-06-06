@@ -12,6 +12,6 @@ def create(request):
     return redirect('../index.html/')
 
 def index(request):
-    feedbacks = Feedback.objects
+    feedbacks = Feedback.objects.order_by('email')
     content = {'feedbacks': feedbacks}
     return render(request, 'feedback.html', content)
