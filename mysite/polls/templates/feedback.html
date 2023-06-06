@@ -29,13 +29,15 @@
     </header>
 
 <body>
-    <div>Обратная связь</div>
-    {% for feedback in feedback %}
-    <div>Кто написал:</div>
-    <div>{{ feedback.email }}</div>
-    <div>Что написал:</div>
-    <div>{{ feedback.text }}</div>
-    {% endfor %}
+    <section class="contents">
+        <h3>Отзывы</h3>
+        {% for feedback in feedbacks.all %}
+        <div class="container">
+            <h4>{{ feedback.email }}</h4>
+            <p>{{ feedback.text }}</p>
+        </div>
+        {% endfor %}
+    </section>
     <footer>
         <p>&copy; 2023 B&V Sneakers</p>
     </footer>

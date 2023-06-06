@@ -1,9 +1,9 @@
-from django.shortcuts import redirect
+from django.http import HttpResponse
+from django.shortcuts import redirect, render
 from polls.models import Feedback
 
 
 def create(request):
-
     feedback = Feedback()
     feedback.email = request.POST.get("email")
     feedback.text = request.POST.get("message")
@@ -12,6 +12,6 @@ def create(request):
     return redirect('../index.html/')
 
 def index(request):
-    feedbacks = Feedback.object.order_by('created_at')
+    feedbacks = Feedback.objects
     content = {'feedbacks': feedbacks}
     return render(request, 'feedback.html', content)
