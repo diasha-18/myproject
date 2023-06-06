@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="{% static 'polls/css/index.css'%}">
+    <link rel="stylesheet" href="{% static 'polls/css/basketball.css'%}">
     <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon.ico'%}">
     <meta charset="UTF-8">
-    <title>Главная страница</title>
+    <title>Basketball</title>
 </head>
     <header class="heade">
         <div class="logo">
@@ -18,18 +19,28 @@
             <ul>
                 <li><a href="/basket">Для баскетбола</a> </li>
                 <li><a href="/volley">Для волейбола</a> </li>
-                <li><a href="/foot">Для футбола</a> </li>
                 <li><a href="/delivery">Доставка</a> </li>
+                <li><a href="/feedback">Отзывы</a> </li>
             </ul>
         </div>
         <div class="tel">
             <a href="tel: +79031155674">+7 (903) 115-56-74</a>
         </div>
-
-
     </header>
+
     <body class="content">
-
-
+        <section class="contents">
+            <h3>Кроссовки для баскетбола</h3>
+            {% for item in items %}
+            <div class="container">
+                <img src= "{{ item.image.url }}" style="width: 300px; height: 300px;">
+                <h4>{{ item.name }}</h4>
+                <p>Цена: {{ item.price }}</p>
+            </div>
+            {% endfor %}
+        </section>
+        <footer>
+            <p>&copy; 2023 B&V Sneakers</p>
+        </footer>
     </body>
 </html>

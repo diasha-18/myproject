@@ -1,26 +1,25 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
-
+from polls.models import Feedback
+from upload_app.models import Volley
+from upload_app.models import Basket
 
 def index(request):
     return render(request, 'index.html', {})
 
 
-def about(request):
-    return render(request, 'about.html')
-
-
 def aboutVolley(request):
-    return render(request, 'volleyball.html')
+    items = Volley.objects.all()
+    return render(request, 'volleyball.html', {'items': items})
 
 
 def aboutBasket(request):
-    return render(request, 'basketball.html')
-
-
-def aboutFoot(request):
-    return render(request, 'football.html')
+    items = Basket.objects.all()
+    return render(request, 'basketball.html', {'items': items})
 
 
 def aboutDelivery(request):
-    return render(request, 'delivery.html')
+    return render(request, 'delivery.html', {})
+
+def feedback(request):
+    return render(request, 'feedback.html', {})

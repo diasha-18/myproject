@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{% static 'polls/css/index.css'%}">
     <link type="image/png" sizes="16x16" rel="icon" href="{% static 'polls/img/favicon.ico'%}">
     <meta charset="UTF-8">
-    <title>Главная страница</title>
+    <title>B&V</title>
 </head>
     <header class="heade">
         <div class="logo">
@@ -18,8 +18,8 @@
             <ul>
                 <li><a href="/basket">Для баскетбола</a> </li>
                 <li><a href="/volley">Для волейбола</a> </li>
-                <li><a href="/foot">Для футбола</a> </li>
                 <li><a href="/delivery">Доставка</a> </li>
+                <li><a href="/feedback">Отзывы</a> </li>
             </ul>
         </div>
         <div class="tel">
@@ -28,14 +28,49 @@
 
 
     </header>
-    <div>
-        <form action="" method="get">
-            <input name="s" placeholder="Искать здесь..." type="search">
-            <button type="submit">Поиск</button>
-        </form>
-    </div>
     <body class="content">
-        <a href="/about">Нажми на меня</a>
+        <p><center>
+            <img src="{% static 'polls/img/six.jpg'%}" width="300px" height="300px">
+            <img src="{% static 'polls/img/three.jpg'%}" width="300px" height="300px">
+            <img src="{% static 'polls/img/one.jpg'%}" width="300px" height="300px">
+        </center></p>
+        <center>
+          <section>
+            <h2>Кто мы?</h2>
+            <p>B&V Sneakers – магазин кроссовок, который заботится о качественной обуви для своих клиентов</p>
+          </section>
 
+          <section>
+            <h2>Наш ассортимент</h2>
+            <p>Мы предлагаем широкий выбор качественных кроссовок для баскетбола и волейбола от известных производителей: Nike, Asics, Anta и др.</p>
+          </section>
+
+          <section>
+            <h2>Как с нами связаться?</h2>
+            <p>Вы можете связаться с нами по телефону, написать на почту или написать в мессенджере по номеру телефона, указанному на нашем сайте.</p>
+          </section>
+
+        <section class="contact section " id="contact">
+            <h2>Форма обратной связи:</h2>
+            <div class="container flex-center">
+                <div class="content">
+                    <div class="contact-rigth">
+                        <form action="feedback/" method="post" class="contact-form">
+                            {% csrf_token %}
+                            <div class="third-row">
+                                <input name="email" type="email" placeholder="Email">
+                                <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                            </div>
+                            <button href="feedback.html" class="btn" type="submit">Send Message </button>
+                        </form>
+                    </div>
+                </div>
+              </div>
+        </section>
+        </center>
+        <footer>
+          <p>&copy; 2023 B&V Sneakers</p>
+        </footer>
     </body>
 </html>
+

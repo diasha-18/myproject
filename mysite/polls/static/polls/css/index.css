@@ -1,94 +1,92 @@
-header{
-        background-color: white;
-    }
-    body.content {
-        background-color: #efeeee;
-        height: 100%;
-        width: 100%;
-    }
+body.content {
+    background-color: #efeeee;
+    height: 100%;
+    width: 100%;
+}
 
-    header {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
-    }
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
 
-    .menu {
-        flex-grow: 1;
-    }
+.menu {
+    flex-grow: 1;
+}
 
-    .menu ul {
-        display: flex;
-        flex-flow: row nowrap;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-    .menu li {
-        margin-right: 20px;
-    }
+.menu li {
+    margin-right: 20px;
+}
 
-    .menu li:last-child {
-        margin-right: 0;
-    }
+.menu li:last-child {
+    margin-right: 0;
+}
 
-    .menu a {
-        padding: 8px 10px;
-    }
+.menu a {
+    padding: 8px 10px;
+}
 
-    .logo {
-        margin-right: 30px;
-    }
+.logo {
+    margin-right: 30px;
+}
 
-    .menu a,
-    .menu .active {
-        display: block;
-        padding: 8px 10px;
-    }
+.menu a,
+.menu .active {
+    display: block;
+    padding: 8px 10px;
+}
 
-    .menu .active {
-        color: #fff;
-        background-color: #ff3d00;
-        border-radius: 8px;
-    }
+.menu .active {
+    color: #fff;
+    background-color: #ff3d00;
+    border-radius: 8px;
+}
 
-    .menu ul {
-        display: flex;
-        flex-flow: row nowrap;
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        line-height: 18px;
-        list-style: none;
-    }
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+    list-style: none;
+}
 
-    .menu a,
-    .menu .active {
-        display: block;
-        padding: 8px 10px;
-        text-transform: uppercase;
-        letter-spacing: .27em;
-    }
+.menu a,
+.menu .active {
+    display: block;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    letter-spacing: .27em;
+}
 
-    .menu a {
-        color: #000;
-        text-decoration: none;
-    }
+.menu a {
+    color: #000;
+    text-decoration: none;
+}
 
-    .tel {
-        font-size: 20px;
-        line-height: 24px;
-        margin-right: 40px;
-    }
+.tel {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 40px;
+}
 
-    .tel a {
-        color: #000;
-        text-decoration: none;
-    }
+.tel a {
+    color: #000;
+    text-decoration: none;
+}
 
-    .menu ul {
+.menu ul {
   display: flex;
   flex-flow: row nowrap;
   margin: 2px 0 0;
@@ -96,4 +94,63 @@ header{
   font-size: 16px;
   line-height: 18px;
   list-style: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #0c0c0c;
+  font-size: 14px;
+}
+
+.contact {
+  top: 300px;
+  left: 500px;
+}
+.contact .container .content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.contact-form input, .contact-form textarea{
+  border: 2px solid #000000;
+  color: #ff3d00;
+  background: #2d2d2d;
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding: 15px 50px 40px 20px ;
+  border-radius: 5px;
+  position: relative;
+  top: -50px;
+}
+.contact-form textarea{
+  width: 100%;
+  resize: none;
+}
+::placeholder{
+  color: #ff3d00;
+}
+
+.contact-form .btn{
+  border-radius: 5px;
+  cursor: pointer;
+  color: #2d2d2d;
+  padding: 14px 24px 12px;
+  font-family: "Helvetica", serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  display:block;
+  width:150px;
+  margin:20px auto;
+  text-align: center;
+  position: relative;
+  top: -75px;
+  left: -180px;
 }

@@ -1,0 +1,18 @@
+.contents {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contents h3 {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: inline-block;
+  flex-wrap: wrap;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px; /* здесь можно задать нужную максимальную ширину */
+}

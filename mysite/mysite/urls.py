@@ -16,13 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from polls.controllers import index
+from django.conf import settings
+from django.conf.urls.static import static
+from polls.controllers import feedback
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index.index),
-    path('about/', index.about),
     path('basket/', index.aboutBasket),
     path('volley/', index.aboutVolley),
-    path('foot/', index.aboutFoot),
     path('delivery/', index.aboutDelivery),
+    path('feedback/', feedback.create),
+    path('feedback/index', feedback.index),
+
 ]
+
+urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
