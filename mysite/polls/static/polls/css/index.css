@@ -116,8 +116,8 @@ footer {
 
 
 .contact-form input, .contact-form textarea{
-  border: 2px solid #000000;
-  color: #ff3d00;
+  border: 2px solid rgba(54, 47, 47, 0.24);
+  color: #000000;
   background: #2d2d2d;
   font-size: 16px;
   margin-bottom: 5px;
@@ -131,7 +131,7 @@ footer {
   resize: none;
 }
 ::placeholder{
-  color: #ff3d00;
+  color: #ffffff;
 }
 
 .contact-form .btn{

@@ -20,7 +20,7 @@
                 <li><a href="/basket">Для баскетбола</a> </li>
                 <li><a href="/volley">Для волейбола</a> </li>
                 <li><a href="/delivery">Доставка</a> </li>
-                <li><a href="/feedback">Отзывы</a> </li>
+                <li><a href="/shfeedback">Отзывы</a> </li>
             </ul>
         </div>
         <div class="tel">
@@ -28,13 +28,13 @@
         </div>
     </header>
 
-<body>
+<body class="content">
     <section class="contents">
         <h3>Отзывы</h3>
-        {% for feedback in feedbacks.all %}
+        {% for feedback in feedback %}
         <div class="container">
             <h4>{{ feedback.email }}</h4>
-            <p>{{ feedback.text }}</p>
+            <p style="width: 200px;">{{ feedback.text }}</p>
         </div>
         {% endfor %}
     </section>

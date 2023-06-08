@@ -1,8 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
-from polls.models import Feedback
 from upload_app.models import Volley
 from upload_app.models import Basket
+from polls.models import Client
+from polls.models import Feedback
 
 def index(request):
     return render(request, 'index.html', {})
@@ -21,5 +22,6 @@ def aboutBasket(request):
 def aboutDelivery(request):
     return render(request, 'delivery.html', {})
 
-def feedback(request):
-    return render(request, 'feedback.html', {})
+def show_feedback(request):
+    feedback = Feedback.objects.all()
+    return render(request, 'feedback.html', {'feedback': feedback})
