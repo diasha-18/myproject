@@ -19,6 +19,7 @@ from polls.controllers import index
 from django.conf import settings
 from django.conf.urls.static import static
 from polls.controllers import feedback
+from django.conf import api
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,7 +29,7 @@ urlpatterns = [
     path('delivery/', index.aboutDelivery),
     path('feedback/', feedback.create),
     path('shfeedback/', index.show_feedback),
-
+    path('api/index', api.index)
 
 ]
 
